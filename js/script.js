@@ -6,8 +6,8 @@ function addTodo() {
     const todoInput = document.getElementById('todo-input');
     const todoDate = document.getElementById('todo-date');
 
-    console.log(todoInput);
-    console.log(todoDate);
+    console.log(todoInput.value);
+    console.log(todoDate.value);
 }
 
 //Fuction to Remove All Todo Items
