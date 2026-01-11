@@ -10,15 +10,13 @@ function addTodo() {
         alert('Please enter both todo item and due date.');
     } else {
         const newTodo = {
-            item: todoInput.value,
+            task: todoInput.value,
             date: todoDate.value
         };
-        todo.push(newTodo);
+        todos.push(newTodo);
 
-        console.log('Todo item added:', todos);
-
-    console.log(todoInput.value);
-    console.log(todoDate.value);
+        console.log('Todo Added:', todos);
+    }
 }
 
 //Fuction to Remove All Todo Items
