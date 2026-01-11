@@ -3,26 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List - Uyu</title>
 
     <!--CSS External-->
     <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <!--Header Content -->
-    <header></header>
+    <!-- Header Content -->
+    <header>
+        <hl class="text font-bold text-2xl"> Todo List Website - Uyu</hl>
+    </header>
 
-    <!--Main Content -->
-    <main></main>
+    <!-- Main Content -->
+    <main>
+        <!-- Input Section -->
+        <section>   
+            <form>  
+                <!-- Todo Input -->
+                 <input class="border rounded p-3" type="text" class="todo-input" placeholder="Enter a new todo item">
+                
+                 <!-- Date Input -->
+                  <input class="border rounded p-3" type="date" id="todo-date" placeholder="Enter due date">
+            </form>
+        
+            <!-- Add Button -->
+            <button class="bg-blue-500 hover:bg-bkue-700 text-white font-bold py-2 px-4 rounded" type="todo">Add 
+                Todo</button>
+        </section>
 
-    <!-- Footer Content -->
-    <footer></footer>
+        <!-- Action Section -->
+        <section class="flex pt-2 justify-between">
+            <!-- Clear All Button -->
+            <button class="border rounded p-2 bg-red-500 text-white">Clear All Todos</button>
+            
+            <!-- Filter Option -->
+            <button class="border rounded p-2 bg-blue-500 text-white">Filter Todos</button>
+        </section>
 
-    
-    <!-- JS External -->
-     <script src="js\script.js"><script>
+        <!-- Todo List Section -->
+        <section class="pt-2">
+            <header>
+                <hl class="text-2xl font-semibold">List of Todo</hl>
+            </header>
+
+            <ul class="todo-list">
+                <!-- Todo items will be dynamically added here --> 
+                 <li>No todos available</li>
+            </ul>
+        </section>
+    </main>
+
+    <!--- Footer Content -->
+    <footer>
+        <p class="text-center p-4">© 2026 Uyu's Todo List</p>
+    </footer>
+
+
+    <!-- JS External-->
+    <script src="js\script.js"></script>
 </body>
 
 </html>
